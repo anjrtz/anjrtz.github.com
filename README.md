@@ -1,4 +1,4 @@
-altarinnovatics.github.com
+Altar Innovatics
 ==========================
 
 TESTING PROJECTS
