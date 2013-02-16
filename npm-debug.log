@@ -1,0 +1,59 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/bin/npm', 'install', 'node@0.6' ]
+info using npm@1.1.4
+info using node@v0.6.12
+verbose config file /home/bek/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+verbose caching /home/bek/Project/heroku/helloworld/package.json
+verbose loadDefaults nodeapps-helloworld@0.2.2
+verbose from cache /home/bek/Project/heroku/helloworld/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'node@0.6', null ]
+silly cache add: name, spec, args [ undefined, 'node@0.6', [ 'node@0.6', null ] ]
+verbose parsed url { pathname: 'node@0.6', path: 'node@0.6', href: 'node@0.6' }
+silly cache add: name, spec, args [ 'node', '0.6', [ 'node', '0.6' ] ]
+verbose parsed url { pathname: '0.6', path: '0.6', href: '0.6' }
+verbose addNamed [ 'node', '0.6' ]
+verbose addNamed [ null, '>=0.6.0- <0.7.0-' ]
+silly name, range, hasData [ 'node', '>=0.6.0- <0.7.0-', false ]
+verbose raw, before any munging node
+verbose url resolving [ 'https://registry.npmjs.org/', './node' ]
+verbose url resolved https://registry.npmjs.org/node
+http GET https://registry.npmjs.org/node
+http 200 https://registry.npmjs.org/node
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+silly get cb     etag: '"3JHIDTYOD015F7QT4OR7JP2G0"',
+silly get cb     date: 'Sat, 16 Feb 2013 17:23:21 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '1015' } ]
+verbose mkdir (expected) error ENOENT, no such file or directory '/home/bek/.npm'
+verbose mkdir (expected) error ENOENT, no such file or directory '/home/bek/.npm/node'
+verbose mkdir done: /home/bek/.npm/node 755
+silly name, range, hasData 2 [ 'node', '>=0.6.0- <0.7.0-', true ]
+silly versions [ 'node', [ '0.0.0' ] ]
+ERR! Error: No compatible version found: node@'>=0.6.0- <0.7.0-'
+ERR! Valid install targets:
+ERR! ["0.0.0"]
+ERR!     at installTargetsError (/usr/share/npm/lib/cache.js:488:10)
+ERR!     at next_ (/usr/share/npm/lib/cache.js:438:17)
+ERR!     at next (/usr/share/npm/lib/cache.js:415:44)
+ERR!     at /usr/share/npm/lib/cache.js:408:5
+ERR!     at saved (/usr/share/npm/lib/utils/npm-registry-client/get.js:147:7)
+ERR!     at Object.oncomplete (/usr/lib/nodejs/graceful-fs.js:230:7)
+ERR! You may report this log at:
+ERR!     <http://bugs.debian.org/npm>
+ERR! or use
+ERR!     reportbug --attach /home/bek/Project/heroku/helloworld/npm-debug.log npm
+ERR! 
+ERR! System Linux 3.2.0-23-generic
+ERR! command "node" "/usr/bin/npm" "install" "node@0.6"
+ERR! cwd /home/bek/Project/heroku/helloworld
+ERR! node -v v0.6.12
+ERR! npm -v 1.1.4
+ERR! message No compatible version found: node@'>=0.6.0- <0.7.0-'
+ERR! message Valid install targets:
+ERR! message ["0.0.0"]
+verbose exit [ 1, true ]
